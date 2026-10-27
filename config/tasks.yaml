@@ -1,0 +1,43 @@
+tarefa_planejamento_e_rea:
+  description: >
+    Ler atentamente o arquivo MASTER_HANDOFF.md e mapear todas as páginas e rotas necessárias para a plataforma completa:
+    1. Home ('/') com Hero, Triagem Rápida, Como Funciona, Notícias e FAQ.
+    2. Simulação Completa ('/simulacao') com formulário de qualificação em 3 etapas e estimador de valores.
+    3. Como Funciona ('/como-funciona') com a explicação dos 3 passos, modelo 'no cure, no pay' e segurança.
+    4. Hub de Notícias SEO ('/noticias') com busca, filtros por nicho (Passageiro, Consumidor, Bancário, Serviços Públicos).
+    5. Páginas de Artigos Individuais ('/noticias/:slug') estruturadas com a Anatomia de 5 Blocos.
+    6. Portal B2B Para Advogados ('/para-advogados') em compliance com o Provimento 205/2021 da OAB.
+    7. Dúvidas Frequentes ('/duvidas-frequentes') com respostas claras.
+  expected_output: >
+    Mapa completo de rotas, dados dos artigos com os 5 blocos e especificações de conformidade da OAB.
+  agent: engenheiro_reverso
+
+tarefa_desenvolvimento_frontend:
+  description: >
+    Implementar o site COMPLETO utilizando React + React Router + Tailwind CSS:
+    - Navbar global funcional com links reais para todas as rotas.
+    - Rota Home com o Hero idêntico ao protótipo e triador interativo.
+    - Rota /simulacao com questionário guiado de elegibilidade.
+    - Rota /como-funciona com timeline detalhada e garantias.
+    - Rota /noticias com vitrine de artigos e busca.
+    - Rota /noticias/:slug renderizando artigos com Featured Snippet, Banner de Triagem no meio, Direitos, Checklist de Provas e Formulário de Captura.
+    - Rota /para-advogados explicando o modelo de parceria tecnológica para escritórios.
+    - Rota /duvidas-frequentes com acordeão interativo.
+    - Footer completo com links de navegação e termos legais.
+  expected_output: >
+    Aplicação React completa com todas as rotas, páginas e links 100% funcionais.
+  agent: desenvolvedor_frontend
+
+tarefa_desenvolvimento_backend:
+  description: >
+    Desenvolver o motor de simulação que calcula probabilidades de sucesso e faixas de indenização com base nos critérios da ANAC e CDC para os 4 nichos.
+  expected_output: >
+    Lógica de cálculo e dados estruturados integrados ao fluxo do usuário.
+  agent: desenvolvedor_backend
+
+tarefa_revisao_qa:
+  description: >
+    Testar cada link da barra de navegação, do rodapé e dos cards de artigos, garantindo que nenhum link esteja quebrado ou estático, validando o Provimento 205/2021 da OAB e gravando a validação em 'relatorio_entrega.md'.
+  expected_output: >
+    Relatório de homologação comprovando que o site é 100% navegável e funcional em todas as rotas.
+  agent: revisor_qa

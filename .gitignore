@@ -1,0 +1,14 @@
+# Ambientes e Dependências
+.venv/
+node_modules/
+dist/
+.env
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Logs e IDE
+*.log
+.vscode/
+.idea/
